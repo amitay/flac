@@ -188,9 +188,9 @@ fi
 AC_C_ATTRIBUTE([target("cpu=power9")],
   [have_cpu_power9=yes],
   [have_cpu_power9=no])
-if test x"$have_cpu_power8" = xyes ; then
-  AC_DEFINE(FLAC__HAS_TARGET_POWER8)
-  AH_TEMPLATE(FLAC__HAS_TARGET_POWER8, [define if compiler has __attribute__((target("cpu=power9"))) support])
+if test x"$have_cpu_power9" = xyes ; then
+  AC_DEFINE(FLAC__HAS_TARGET_POWER9)
+  AH_TEMPLATE(FLAC__HAS_TARGET_POWER9, [define if compiler has __attribute__((target("cpu=power9"))) support])
 fi
 
 fi
